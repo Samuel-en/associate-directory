@@ -8,7 +8,7 @@ const Home = () => {
     const [sortOrder, setSortOrder] = useState("");
     const [viewEmployees, setViewEmployees] = useState([]);
 
-    //   Initial employee render
+
   useEffect(() => {
     axios
       .get(
@@ -23,3 +23,21 @@ const Home = () => {
         console.log(err);
       });
   }, []);
+
+  const sortBy = () => {
+    let sortedEmployees = [];
+
+    if (!sortOrder || sortOrder === "ascending") {
+      sortedEmployees = [...employees].sort((a, b) =>
+        a.name.first < b.name.first ? -1 : 1
+      );
+      setSortOrder("descending");
+    } else {
+      sortedEmployees = [...employees].sort((a, b) =>
+        a.name.first > b.name.first ? -1 : 1
+      );
+      setSortOrder("ascending");
+    }
+    console.log(sortedEmployees);
+    setViewEmployees([...sortedEmployees]);
+  };
