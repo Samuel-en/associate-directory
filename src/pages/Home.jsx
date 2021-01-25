@@ -41,3 +41,24 @@ const Home = () => {
     console.log(sortedEmployees);
     setViewEmployees([...sortedEmployees]);
   };
+
+  const filterResults = (e) => {
+    const value = e.target.value;
+
+    if (value === "") {
+      setViewEmployees(employees);
+      return;
+    }
+
+    const results = [...employees].filter((employee) => {
+      return (
+        employee.name.first.toLowerCase().includes(value.toLowerCase()) ||
+        employee.name.last.toLowerCase().includes(value.toLowerCase()) ||
+        employee.phone.includes(value) ||
+        employee.dob.date.includes(value) ||
+        employee.email.includes(value.toLowerCase())
+      );
+    });
+
+    setViewEmployees(results);
+  };
