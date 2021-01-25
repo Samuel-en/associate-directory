@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Employee from "../components/Employee/EmployeeRow";
-import Search  from "../components/SearchBar/SearchBar";
+import Employee from "../components/Employee/Employee";
+import Search  from "../components/Search/Search";
 
 const Home = () => {
     const [employees, setEmployees] = useState([]);
