@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Employee from "../components/Employee/EmployeeRow";
-import Search  from "../components/Search/SearchBox";
+import Search  from "../components/SearchBox/SearchBox";
 
 const Home = () => {
     const [employees, setEmployees] = useState([]);
@@ -74,7 +74,7 @@ const Home = () => {
       </div>
       <div className="row">
         <div className="col-sm-4">
-          <Search onChange={filterResults} />
+          <SearchBox onChange={filterResults} />
         </div>
       </div>
       <div className="row">
@@ -92,7 +92,7 @@ const Home = () => {
           </thead>
           <tbody>
             {viewEmployees.map((employee) => (
-              <Employee
+              <EmployeeRow
                 name={employee.name}
                 phone={employee.phone}
                 email={employee.email}
