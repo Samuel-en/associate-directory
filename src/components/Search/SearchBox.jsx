@@ -1,6 +1,6 @@
 import React from "react";
 
-const Search = (props) => {
+const SearchBox = (props) => {
     return (
       //   filtering employees through searchbox 
       <div className="create-form" style={{textAlign: "center"}}>
@@ -17,4 +17,4 @@ const Search = (props) => {
   );
 };
 
-export default Search;
+export default SearchBox;

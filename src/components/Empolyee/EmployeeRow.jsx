@@ -1,7 +1,7 @@
 import React from "react";
 
 // employee information thats rendered in a row on the table
-const Employee = (props) => {
+const EmployeeRow = (props) => {
   return (
     <tr>
       <th scope="row">
@@ -17,5 +17,5 @@ const Employee = (props) => {
   );
 };
 
-export default Employee;
+export default EmployeeRow;
 
