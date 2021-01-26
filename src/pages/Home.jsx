@@ -66,9 +66,9 @@ const Home = () => {
   return (
     <div className="container">
       <div className="row">
-        <div style={{backgroundColor: "#400000", color: "rgba(64,0,0"}} className="col">
+        <div style={{backgroundColor: "#400000", color: "rgba(255, 255, 255"}} className="col">
           <h1 className="text-center">Associate Directory</h1>
-          <h5 className="text-center">Use the search box to narrow your results or click name to sort alphabetically</h5>
+          <h5 className="text-center">narrow searh with searbox</h5>
         
         </div>
       </div>
