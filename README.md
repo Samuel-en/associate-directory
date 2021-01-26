@@ -5,11 +5,10 @@ This application allows user to search by employee name, phone number and date o
 
 ## Table of Contents 
 
-[Usage](#)
-[Installation](#)
-[Credits](#)
-[Contact](#)
-[License](#)
+* [Usage](#)
+* [Installation](#)
+* [Credits](#)
+* [License](#)
 
 
 
