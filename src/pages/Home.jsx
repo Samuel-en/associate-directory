@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Employee from "../components/Employee/EmployeeRow";
-import Search  from "../components/SearchBox/SearchBox";
+import EmployeeRow from "../components/Empolyee/EmployeeRow";
+import SearchBox  from "../components/Search/SearchBox";
 
 const Home = () => {
     const [employees, setEmployees] = useState([]);
@@ -66,7 +66,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="row">
-        <div style={{backgroundColor: "#176a83", color: "rgba(255,255,255,0.822"}} className="col">
+        <div style={{backgroundColor: "#400000", color: "rgba(64,0,0"}} className="col">
           <h1 className="text-center">Associate Directory</h1>
           <h5 className="text-center">Use the search box to narrow your results or click name to sort alphabetically</h5>
         
